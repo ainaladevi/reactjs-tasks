@@ -44,19 +44,17 @@ import { Routes, Route } from "react-router-dom";
 // import SecondComp from "./pratice-tasks/SecondComp";
 // import FirstComp from "./pratice-tasks/FirstComp";
 // import ThirdComp from "./pratice-tasks/ThirdComp";
-import Sidebar from "./Hospital Website/Sidebar";
-import Navbar from "./Hospital Website/Navbar";
-import Nursingdashboard from "./Hospital Website/Nursingdashboard";
-import HospitalData from "./Hospital Website/HospitalData";
-import CriticalPatients from "./Hospital Website/CriticalPatients";
-import PatientCare from "./Hospital Website/PatientCare";
+import NursingDashboard1 from "./Hospital Website/NursingDashboard1";
+import BedManagement from "./Hospital Website/BedManagement";
+import AdmitPatient from "./Hospital Website/AdmitPatient";
+import PatientCarePage from "./PatientCarePage";
 
 function App() {
   const student = {
-    name : "Devi",
+    name: "Devi",
     age: 22,
-    city: "Guntur"
-  }
+    city: "Guntur",
+  };
   return (
     <div className="App">
       {/* <StaticComponents/>
@@ -120,17 +118,11 @@ function App() {
       {/* <FirstComp name="Devi"/>
       <SecondComp name="Nani"/>
       <ThirdComp name={student}/> */}
-      <div className="app-layout">
-        <Sidebar/>
-        <div className="content">
-          <Navbar/>
-          <Nursingdashboard/>
-          <HospitalData/>
-          <CriticalPatients/>
-          <PatientCare/>
-        </div>
-      </div>
-      
+        <Routes>
+          <Route path="/" element={<NursingDashboard1 />}></Route>
+          <Route path="/BedManagement" element={<BedManagement />}></Route>
+          <Route path="/Patientcarepage" element={<PatientCarePage />}></Route>
+        </Routes>
     </div>
   );
 }

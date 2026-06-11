@@ -8,6 +8,9 @@ import admin from "./admin.png";
 import medicareicon from "./mediicon.png";
 import wrong from "./wrong.png";
 import { CiLogin } from "react-icons/ci";
+import NursingDashboard1 from "./NursingDashboard1";
+import BedManagement from "./BedManagement";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -16,7 +19,7 @@ const Sidebar = () => {
         id="sidebarMenu"
         className="collapse d-lg-block sidebar collapse bg-white"
       >
-            <div className="position-sticky">
+            <div className="position-fixed">
               <div className="list-group list-group-flush mx-3 mt-4">
                 <div className="header container">
                               <div className="header-content">
@@ -34,8 +37,8 @@ const Sidebar = () => {
                                 </div>
         
             <div className="dashboard-item">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-decoration-none py-2"
               aria-current="true"
             >
@@ -43,18 +46,18 @@ const Sidebar = () => {
                 <RiDashboardLine size={20} />
                 &nbsp; Dashboard
               </span>
-            </a></div>
-            <a
-              href="#"
+            </Link></div>
+            <Link
+              to="/BedManagement"
               class="sidebar-items text-decoration-none text-secondary py-3"
             >
               <span className="bed-management">
                 <MdOutlineBed size={20} />
                 &nbsp;Bed Management
               </span>
-            </a>
+            </Link>
             <a
-              href="#"
+              href="/Patientcarepage"
               className="sidebar-items text-decoration-none text-secondary py-3"
             >
               <span className="patient">
@@ -83,7 +86,7 @@ const Sidebar = () => {
           </div>
         </div>
       </nav>
-        <div className="sidebar-footer">
+        <div className="sidebar-footer position-fixed">
           <div className="footer-admin">
             <img src={admin} />
             <div>
