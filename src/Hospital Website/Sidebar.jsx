@@ -65,24 +65,24 @@ const Sidebar = () => {
                 &nbsp; Patient Care
               </span>
             </a>
-            <a
-              href="#"
+            <Link
+              to="/VitalsMonitoring"
               className="sidebar-items text-decoration-none text-secondary py-3"
             >
               <span className="vital">
                 <img src={vector} width={20} height={20}></img>&nbsp; Vitals
                 Monitoring
               </span>
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/TasksPage"
               className="sidebar-items text-decoration-none text-secondary py-3"
             >
               <span className="task">
                 <img src={taskimg} width={20} height={20}></img>&nbsp; Tasks
                 &amp; HandOver
               </span>
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

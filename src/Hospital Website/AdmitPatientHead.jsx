@@ -6,7 +6,7 @@ import AdmissionDetails from '../AdmissionDetails';
 
 const AdmitPatient = ({closePopup}) => {
   return (
-    <section className='admit-modal'>
+    <div className='admit-modal'>
         <div className="admit-modal-content">
             <button className='close-btn' onClick={closePopup}><IoMdClose /></button>
         <h1 className="hero-patient-heading">Admit Patient to Available Bed</h1>
@@ -14,7 +14,7 @@ const AdmitPatient = ({closePopup}) => {
         <BedAssignment/>
         <AdmissionDetails/>
         </div>
-    </section>
+    </div>
   )
 }
 

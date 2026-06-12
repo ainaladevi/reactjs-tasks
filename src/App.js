@@ -48,6 +48,8 @@ import NursingDashboard1 from "./Hospital Website/NursingDashboard1";
 import BedManagement from "./Hospital Website/BedManagement";
 import AdmitPatient from "./Hospital Website/AdmitPatient";
 import PatientCarePage from "./PatientCarePage";
+import VitalsMonitoringPage from "./VitalsMonitoringPage";
+import TasksPage from "./TasksPage";
 
 function App() {
   const student = {
@@ -122,6 +124,8 @@ function App() {
           <Route path="/" element={<NursingDashboard1 />}></Route>
           <Route path="/BedManagement" element={<BedManagement />}></Route>
           <Route path="/Patientcarepage" element={<PatientCarePage />}></Route>
+          <Route path="/VitalsMonitoring" element={<VitalsMonitoringPage />}></Route>
+          <Route path="/TasksPage" element={<TasksPage />}></Route>
         </Routes>
     </div>
   );
