@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import { MdBedroomParent } from "react-icons/md";
+import AdmitPatient from "./AdmitPatientHead";
 
 const BedsData = () => {
-    const[showModal, setShowModal] = useState(false);
+    // const[showModal, setShowModal] = useState(false);
+    const[showPopup, setShowPopup] = useState(false);
   return (
-    <section className="bedsdata-section">
+    <section className="container bedsdata-section">
       <div className="row mt-5">
-        <div className="beds-cards col-lg-4">
+        <div className="beds-cards col-lg-4 d-flex flex-wrap gap-2">
           <div className="hero-beds">
             <div className="d-flex">
               <MdBedroomParent size={48} color="#E7000B" />
-              <div className="icu-content">
+              <div className="icu-content mb-3">
                 <span>ICU-101</span>
                 <span className="hero-icu">ICU</span>
               </div>
@@ -34,11 +36,11 @@ const BedsData = () => {
               <span>ID: PAT005</span>
             </div>
             <div className="icu-inner-details2 mt-2">
-              <div className="card-details2">
+              <div className="card-details2 mt-4">
                 <p>Admitted:</p>
                 <p>Assigned Nurse:</p>
               </div>
-              <div className="card-details3">
+              <div className="card-details3 mt-4">
                 <p>2026-01-01</p>
                 <p>Jennifer Thompson</p>
               </div>
@@ -56,7 +58,7 @@ const BedsData = () => {
           <div className="hero-beds">
             <div className="d-flex">
               <MdBedroomParent size={48} color="#0084D1" />
-              <div className="icu-content">
+              <div className="icu-content ">
                 <span>ICU-102</span>
                 <span className="hero-icu">ICU</span>
               </div>
@@ -119,7 +121,12 @@ const BedsData = () => {
               <p>Floor1</p>
             </div>
           </div><hr/>
-          <button className="admit-btn">Admit Patient</button>
+          <button className="admit-btn" onClick={()=> setShowPopup(true)}>Admit Patient</button>
+          {showPopup && (
+                <>
+                <div className="modal-backdrop-custom fade show" onClick={()=>setShowPopup(false)}></div>
+                <AdmitPatient closePopup={()=>setShowPopup(false)}/></>
+            )}
         </div>
       </div>
       <div className="row mt-4">
@@ -230,7 +237,10 @@ const BedsData = () => {
               <p>Floor1</p>
             </div>
           </div><hr/>
-          <button className="admit-btn">Admit Patient</button>
+          <button className="admit-btn" onClick={()=> setShowPopup(true)}>Admit Patient</button>
+          {showPopup && (
+                <AdmitPatient closePopup={()=>setShowPopup(false)}/>
+            )}
         </div>
       </div>
       <div className="row mt-4">
@@ -255,7 +265,10 @@ const BedsData = () => {
               <p>Floor 3</p>
             </div>
           </div><hr/>
-          <button className="admit-btn">Admit Patient</button>
+          <button className="admit-btn" onClick={()=> setShowPopup(true)}>Admit Patient</button>
+          {showPopup && (
+                <AdmitPatient closePopup={()=>setShowPopup(false)}/>
+            )}
         </div>
         <div className="beds-cards col-lg-4">
           <div className="hero-beds">

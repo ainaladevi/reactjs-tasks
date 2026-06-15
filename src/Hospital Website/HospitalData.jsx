@@ -7,9 +7,9 @@ import { LuClipboardList } from "react-icons/lu";
 
 const HospitalData = () => {
   return (
-    <section className="hospital-data">
-      <div className="row gap-5 ms-4">
-        <div className="beds-card col-lg-2">
+    <section className="container hospital-data">
+      <div className="row mt-3">
+        <div className="beds-card col-lg-3">
           <div className="beds-inner-data">
             <MdOutlineBed className="bed-icon" size={20} />
             <span className="beds-text">Occupied Beds</span>
@@ -17,21 +17,21 @@ const HospitalData = () => {
           <p className="beds-inner-data1">5/8</p>
           <p className="beds-inner-data2">63% occupancy</p>
         </div>
-        <div className="patient-card col-lg-2">
+        <div className="patient-card col-lg-3">
           <div className="patients-inner-data">
             <MdWarningAmber color="#E7000B" size={20} />
             <span className="patients-data">Critical Patients</span>
           </div>
           <p className="patients-inner-data1">1 Active</p>
         </div>
-        <div className="vitals-card col-lg-2">
+        <div className="vitals-card col-lg-3">
           <div className="vitals-inner-data">
             <TbActivityHeartbeat className="vector-icon"/> 
             <span className="vitals-data">Vitals Due</span>
           </div>
           <p className="vitals-inner-data1">1 Active</p>
         </div>
-        <div className="task-card col-lg-2">
+        <div className="task-card col-lg-3">
           <div className="task-inner-data">
             <LuClipboardList className="clipboard-icon"/>  
             <span className="task-data">Pending Task</span>

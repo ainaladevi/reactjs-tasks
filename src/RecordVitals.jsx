@@ -5,7 +5,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const RecordVitals = () => {
   return (
-    <div className='recordvitals-section'>
+    <div className='container recordvitals-section'>
         <h3 className='recordvitals-heading'>Record Vitals</h3>
         <div className="recordvitals-form">
             <div className='recordvitals-innerform'>

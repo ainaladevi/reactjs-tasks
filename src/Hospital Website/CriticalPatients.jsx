@@ -3,13 +3,13 @@ import { MdWarningAmber } from "react-icons/md";
 
 const CriticalPatients = () => {
   return (
-    <section className='patients-section'>
+    <section className=' patients-section'>
         <div className="patients-main">
             <div className="cpatients-data">
                <MdWarningAmber color="#E7000B" size={20} />
                <span className='cpatients-inner-data'>Critical Patients - Immediate Attention Required</span>
             </div>
-            <div className="cpatients-card">
+            <div className="cpatients-card ">
                 <div className="cpatients-inner-content">
                     <div className="cpatients-inner-content1">
                       <div className="icu-icon">

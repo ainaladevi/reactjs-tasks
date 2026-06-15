@@ -4,7 +4,7 @@ import AdmitPatient from './AdmitPatient';
 const BedHeading = () => {
     const[showPopup, setShowPopup] = useState(false);
   return (
-    <div className='bed-section ps-3'>
+    <header className='bed-section ps-3'>
         <div className='bed-heading'>
             <h1 className='heading'>Bed Management</h1>
             <p className='bed-data'>Monitor and manage hospital bed allocation</p>
@@ -15,12 +15,12 @@ const BedHeading = () => {
                 <button className='btn-2'>Occupied</button>
                 <button className='btn-2'>Vacant</button>
             </div>
-            <button className='btn-3' onClick={()=> setShowPopup(true)}>+ Admit Patient</button>
+            <button className='btn-3 mt-2' onClick={()=> setShowPopup(true)}>+ Admit Patient</button>
             {showPopup && (
                 <AdmitPatient closePopup={()=>setShowPopup(false)}/>
             )}
         </div>
-        </div>
+        </header>
   )
 }
 

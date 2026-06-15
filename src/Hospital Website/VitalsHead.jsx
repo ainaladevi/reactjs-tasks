@@ -10,7 +10,7 @@ const VitalsHead = ({closePopup}) => {
         <div className="admit-modal-content">
             <button className='close-btn' onClick={closePopup}><IoMdClose /></button>
             <h1 className="hero-vital-heading">Record Vital Signs</h1>
-            <p>Robert Taylor - ICU-101</p>
+            <p>Robert Taylor - ICU-101</p><hr/>
             <VitalsInfo/>
             <VitalsSigns/>
             <AdditionalMeasurements/>

@@ -23,7 +23,7 @@ const TaskCards = () => {
             </div>
             <button className='scheduled-btn'>Routine</button>
         </div>
-        <div className="task-items mt-3">
+        <div className="task-items2 mt-3">
             <div className="task-inner-items">
                 <span className='task-inner-item1'><del>Wound dressing - Bed GW-201</del></span>
                 <span className='task-inner-item2'>Completed at 1:30 PM</span>

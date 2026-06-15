@@ -2,15 +2,15 @@ import React from "react";
 import { RiDashboardLine } from "react-icons/ri";
 import { MdOutlineBed } from "react-icons/md";
 import { RxPeople } from "react-icons/rx";
-import vector from "./Vector.png";
-import taskimg from "./task.png";
+import { TbActivityHeartbeat } from "react-icons/tb";
+import { LuClipboardList } from "react-icons/lu";
 import admin from "./admin.png";
 import medicareicon from "./mediicon.png";
 import wrong from "./wrong.png";
 import { CiLogin } from "react-icons/ci";
 import NursingDashboard1 from "./NursingDashboard1";
 import BedManagement from "./BedManagement";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -37,52 +37,51 @@ const Sidebar = () => {
                                 </div>
         
             <div className="dashboard-item">
-            <Link
+            <NavLink
               to="/"
-              className="text-decoration-none py-2"
-              aria-current="true"
+              className={({ isActive})=>isActive ? "sidebar-items active-menu":"sidebar-items"}
             >
               <span className="dashboard">
                 <RiDashboardLine size={20} />
                 &nbsp; Dashboard
               </span>
-            </Link></div>
-            <Link
+            </NavLink></div>
+            <NavLink
               to="/BedManagement"
-              class="sidebar-items text-decoration-none text-secondary py-3"
+              className={({ isActive})=>isActive ? "sidebar-items active-menu":"sidebar-items"}
             >
               <span className="bed-management">
                 <MdOutlineBed size={20} />
                 &nbsp;Bed Management
               </span>
-            </Link>
-            <a
-              href="/Patientcarepage"
-              className="sidebar-items text-decoration-none text-secondary py-3"
+            </NavLink>
+            <NavLink
+              to="/Patientcarepage"
+              className={({ isActive})=>isActive ? "sidebar-items active-menu":"sidebar-items"}
             >
               <span className="patient">
                 <RxPeople size={20} />
                 &nbsp; Patient Care
               </span>
-            </a>
-            <Link
+            </NavLink>
+            <NavLink
               to="/VitalsMonitoring"
-              className="sidebar-items text-decoration-none text-secondary py-3"
+              className={({ isActive})=>isActive ? "sidebar-items active-menu":"sidebar-items"}
             >
               <span className="vital">
-                <img src={vector} width={20} height={20}></img>&nbsp; Vitals
+                <TbActivityHeartbeat size={20}/>&nbsp; Vitals
                 Monitoring
               </span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/TasksPage"
-              className="sidebar-items text-decoration-none text-secondary py-3"
+              className={({ isActive})=>isActive ? "sidebar-items active-menu":"sidebar-items"}
             >
               <span className="task">
-                <img src={taskimg} width={20} height={20}></img>&nbsp; Tasks
+                <LuClipboardList size={20}/>&nbsp; Tasks
                 &amp; HandOver
               </span>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </nav>
@@ -90,7 +89,7 @@ const Sidebar = () => {
           <div className="footer-admin">
             <img src={admin} />
             <div>
-                <p className="admin-name">Jennifer Thompson</p>
+                <span className="admin-name">Jennifer Thompson</span>
                 <p className="admin-occ">nurse</p>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const RecordVitalSigns = () => {
   return (
-    <div className='recordvitalsign-section mt-4'>
+    <div className='container recordvitalsign-section mt-4'>
         <h3 className='recordvitalsign-heading'>Recent Vital Signs</h3>
         <table className='table-section'>
             <thead className='table-header'>

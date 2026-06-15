@@ -5,7 +5,7 @@ import { LuClipboardList } from "react-icons/lu";
 
 const PatientCare = () => {
   return (
-    <section className="patientcare-section mt-5">
+    <section className=" patientcare-section mt-5">
       <div className="row gap-2">
         <div className="bed-card col-lg-5">
           <div className="bed-inner-content">
@@ -77,7 +77,7 @@ const PatientCare = () => {
             </div>
             <button className="start-btn">Start</button>
           </div>
-          <div className="hero-card1">
+          <div className="hero-card2">
             <div>
               <TbActivityHeartbeat  color="#0084D1" className="graph-icon" />
             </div>
@@ -91,7 +91,7 @@ const PatientCare = () => {
             </div>
             <button className="start-btn">Start</button>
           </div>
-          <div className="hero-card1">
+          <div className="hero-card3">
             <div>
               <LuClipboardList color="#9810FA" className="clipboard-icon1"/> 
             </div>

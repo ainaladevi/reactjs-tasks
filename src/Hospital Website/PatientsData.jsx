@@ -9,7 +9,7 @@ const PatientsData = () => {
   const[showPopup, setShowPopup] = useState(false);
   const[showCarePlan, setShowCarePlan] = useState(false);
   return (
-    <div className="patients-data-section ms-3">
+    <div className="container patients-data-section ms-3">
       <div className="patientdata-card">
         <div className="patients-data-items">
           <div className="patient-data1">
@@ -60,7 +60,7 @@ const PatientsData = () => {
           </div>
           <div className="patient-item1">
             <span className="patient-inner-details">Allergies</span>
-            <span className="patient-inner-details1">None recorded</span>
+            <span className="patient-inner-details2">None recorded</span>
           </div>
         </div>
       </div>
