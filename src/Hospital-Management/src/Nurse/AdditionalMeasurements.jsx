@@ -34,8 +34,7 @@ const AdditionalMeasurements = () => {
         ></textarea>
       </div>
       <div className="alert-section mt-5">
-        <GoAlert color="#F54900" />
-        &nbsp;<span className="alert-data">Alert Conditions</span>
+        &nbsp;<span className="alert-data"><GoAlert color="#F54900" />Alert Conditions</span>
         <div className="mt-3 d-flex gap-5">
           <div className="alert-data1">
             <input type="checkbox" />

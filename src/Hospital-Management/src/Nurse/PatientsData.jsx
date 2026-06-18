@@ -4,6 +4,7 @@ import { IoCameraOutline } from "react-icons/io5";
 import { LuClipboardList } from "react-icons/lu";
 import RecordVitals from "./RecordVitals";
 import NursingCarePlan from "./NursingCarePlan";
+import RecordVitalsPage from "./RecordVitalsPage";
 
 const PatientsData = () => {
   const[showPopup, setShowPopup] = useState(false);
@@ -28,8 +29,8 @@ const PatientsData = () => {
               <button className="vitals-btn" onClick={()=> setShowPopup(true)}>
                 <TbActivityHeartbeat /> Record Vitals
               </button>
-              {showPopup && (
-                <RecordVitals closePopup={()=>setShowPopup(false)}/>
+             {showPopup && (
+                <RecordVitalsPage closePopup={()=>setShowPopup(false)}/>
             )}
               <button className="scan-btn">
                 <IoCameraOutline /> Upload Scan
@@ -83,7 +84,7 @@ const PatientsData = () => {
                 <TbActivityHeartbeat /> Record Vitals
               </button>
               {showPopup && (
-                <RecordVitals closePopup={()=>setShowPopup(false)}/>
+                <RecordVitalsPage closePopup={()=>setShowPopup(false)}/>
             )}
               <button className="scan-btn">
                 <IoCameraOutline /> Upload Scan
@@ -117,7 +118,7 @@ const PatientsData = () => {
                 <TbActivityHeartbeat /> Record Vitals
               </button>
               {showPopup && (
-                <RecordVitals closePopup={()=>setShowPopup(false)}/>
+                <RecordVitalsPage closePopup={()=>setShowPopup(false)}/>
             )}
               <button className="scan-btn">
                 <IoCameraOutline /> Upload Scan
@@ -151,7 +152,7 @@ const PatientsData = () => {
                 <TbActivityHeartbeat /> Record Vitals
               </button>
               {showPopup && (
-                <RecordVitals closePopup={()=>setShowPopup(false)}/>
+                <RecordVitalsPage closePopup={()=>setShowPopup(false)}/>
             )}
               <button className="scan-btn">
                 <IoCameraOutline /> Upload Scan
@@ -186,7 +187,7 @@ const PatientsData = () => {
                 <TbActivityHeartbeat /> Record Vitals
               </button>
               {showPopup && (
-                <RecordVitals closePopup={()=>setShowPopup(false)}/>
+                <RecordVitalsPage closePopup={()=>setShowPopup(false)}/>
             )}
               <button className="scan-btn">
                 <IoCameraOutline /> Upload Scan
