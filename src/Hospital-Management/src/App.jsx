@@ -18,14 +18,14 @@ function App() {
 
   return (
     <>
-      {/* <Routes>
+      <Routes>
           <Route path="/" element={<NursingDashboard1 />}></Route>
           <Route path="/BedManagement" element={<BedManagement />}></Route>
           <Route path="/Patientcarepage" element={<PatientCarePage />}></Route>
           <Route path="/VitalsMonitoring" element={<VitalsMonitoringPage />}></Route>
           <Route path="/TasksPage" element={<TasksPage />}></Route>
-        </Routes> */}
-        <Routes>
+        </Routes>
+        {/* <Routes>
           <Route path="/" element={<PharmacyDashboardPage />}></Route>
           <Route path="/PrescriptionPage" element={<PrescriptionsPage />}></Route>
           <Route path="/InventoryPage" element={<InventoryPage />}></Route>
@@ -35,7 +35,7 @@ function App() {
           <Route path="/allpage" element={<AllPage />}></Route>
           <Route path="/lowstock" element={<LowStockPage />}></Route>
           <Route path="/expiring" element={<ExpiringPage />}></Route>
-        </Routes>
+        </Routes> */}
     </>
   )
 }
